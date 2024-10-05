@@ -1,19 +1,16 @@
 // Задача: Напишіть функцію findMax, яка приймає масив чисел і повертає найбільше число в масиві.
 
 function findMax(numbers) {
-if (arr.length === 0) {
-    return undefined;
+if (numbers.length === 0) {
+    return null;
   }
-
-  let max = arr[0];
-
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > max) {
-      max = arr[i];
+  let maxNumber = numbers[0];
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] > maxNumber) {
+      maxNumber = numbers[i];
     }
   }
-
-  return max;
+  return maxNumber;
 }
 
 // Приклади використання:
